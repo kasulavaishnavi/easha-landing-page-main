@@ -1,0 +1,168 @@
+@media (min-width:1300px) and (max-width:1600px){
+    .container{
+        display: inline-flex !important;
+        margin-left:10% !important ;
+        margin-right: auto;
+    }
+    .container .Mobile{
+        width:550px !important;
+    }
+    .container .Text{
+        width: 550px !important;
+    }
+    h1{
+        font-size: 21px !important;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .Mobile img{
+        height: 620px;
+        width: 548px;
+    }
+    .circle img{
+        width: 65px !important;
+        height: 65px !important;
+    }
+    .step-box{
+        width: 508px !important;
+        margin-bottom: 70px;
+    }
+    .step-title{
+        font-size: 35px !important;
+        font-weight: 600 !important;
+        color: #000 !important;
+
+
+    }
+    .step-desc{
+        font-size: 24px !important;
+        width: 500px;
+    }
+}
+
+@media (max-width:426px){
+    section h1{
+        font-size: 20px !important;
+    }
+    h1{
+        font-weight: bold !important;
+        font-size: 20px ;
+        margin-bottom: 40px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .Mobile img{
+        height: 321px !important;
+        width: 204px !important;
+        margin-left: 3rem !important;
+    }
+    .circle img{
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
+    .step-title{
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        color: #000 !important;
+    }
+    .step-desc{
+        font-size: 12px !important;
+        width: 300px;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px){
+    section h1{
+        font-size: 30px !important;
+    }
+    h1{
+        font-weight: bold !important;
+        margin-bottom: 40px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .Mobile img{
+        height: 402px !important;
+        width: 343px !important;
+    }
+    .circle img{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .step-title{
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        color: #000 !important;
+    }
+    .step-desc{
+        font-size: 15px !important;
+        width: 400px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    section h1{
+        font-size: 40px !important;
+    }
+    h1{
+        font-weight: bold !important;
+        margin-bottom: 40px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .Mobile img{
+        height: 502px !important;
+        width: 443px !important;
+    }
+    .circle img{
+        width: 55px !important;
+        height: 55px !important;
+    }
+    
+    .step-title{
+        font-size: 25px !important;
+        font-weight: 600 !important;
+        color: #000 !important;
+
+    }
+    .step-desc{
+        font-size: 18px !important;
+        width: 330px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1200px){
+    section h1{
+        font-size: 41px !important;
+    }
+    h1{
+        font-weight: bold !important;
+        margin-bottom: 40px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .Mobile img{
+        height: 532px !important;
+        width: 473px !important;
+    }
+    .circle img{
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .step-title{
+        font-size: 30px !important;
+        font-weight: 600 !important;
+        color: #000 !important;
+
+
+    }
+    .step-desc{
+        font-size: 20px !important;
+        width: 340px;
+        padding-right: 30px;
+    }
+}

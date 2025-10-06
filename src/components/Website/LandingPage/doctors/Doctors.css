@@ -1,0 +1,117 @@
+.image-container{
+    width: 442px !important;
+    height: 439px !important;
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../../assets/meet-doctor.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 28px;
+}
+.image-container:last-child {
+    margin-right: 320px !important;
+}
+.heading{
+    font-size: 54px !important;
+    font-weight: bold !important;
+}
+.greenLineHeight{
+    height: 14px;
+}
+.image-gap{
+    gap:40px !important;
+}
+
+@media screen and  (max-width:426px){
+    .image-container{
+    width: 121px !important;
+    height: 120px !important;
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../../assets/meet-doctor.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.card-image{
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+}
+.heading{
+    font-size: 14px !important;
+    text-align: left !important;
+}
+.name{
+    font-size: 12px !important;
+}
+.speciality{
+    font-size: 10px !important;
+}
+.greenLineHeight{
+    height: 5px;
+}
+.header-margin{
+    margin-bottom: 10px !important;
+}
+.image-gap{
+    gap:15px !important;
+}
+}
+
+
+@media (min-width:426px) and  (max-width:768px){
+    .image-container{
+    width: 250px !important;
+    height: 260px !important;
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../../assets/meet-doctor.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+}
+.card-image{
+  margin-bottom: 5px !important;
+  margin-left: 5px !important;
+}
+.heading{
+    font-size: 34px !important;
+    text-align: start !important;
+}
+.name{
+    font-size: 20px !important;
+}
+.speciality{
+    font-size: 15px !important;
+}
+.greenLineHeight{
+    height: 10px;
+}
+}
+
+@media (min-width:768px) and  (max-width:1024px){
+    .image-container{
+    width: 310px !important;
+    height: 290px !important;
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../../assets/meet-doctor.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 23px;
+}
+.card-image{
+  margin-bottom: 5px !important;
+  margin-left: 5px !important;
+}
+.heading{
+    font-size: 40px !important;
+    text-align: start !important;
+}
+.name{
+    font-size: 25px !important;
+}
+.speciality{
+    font-size: 20px !important;
+}
+.greenLineHeight{
+    height: 13px;
+}
+}

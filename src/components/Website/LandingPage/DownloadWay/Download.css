@@ -1,0 +1,210 @@
+@media (min-width:1300px) and (max-width:1600px){
+.image-left{
+    width: 726px;
+    height:639px ;
+}
+.right-section {
+    width: 419px !important;
+}
+.right-section p{
+    font-size: 24px !important;
+}
+.logo-image{
+    width: 124px !important;
+    height: 102px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.scanner-image{
+    width: 321px;
+    height: 340px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.right-section  .download-text{
+    font-size: 16px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.right-section .download-options{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.download-options img{
+    width: 142px !important;
+    height: 44px !important;
+}
+}
+
+@media(min-width:350px) and (max-width:426px){
+.image-left{
+    width: 350px;
+    height:350px;
+}
+.right-section p{
+    font-size: 18px !important;
+}
+.logo-image{
+    width: 100px !important;
+    height: 102px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.scanner-image{
+    width: 250px !important;
+    height: 220px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.right-section  .download-text{
+    font-size: 12px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.right-section .download-options{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 30px !important;
+}
+.download-options img{
+    width: 140px !important;
+    height: 40px !important;
+}
+}
+
+@media (min-width:426px) and (max-width:768px){
+
+.right-section p{
+    font-size: 20px !important;
+}
+.logo-image{
+    width: 130px !important;
+    height: 110px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.scanner-image{
+    width: 260px;
+    height: 220px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.right-section  .download-text{
+    font-size: 14px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.right-section .download-options{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 30px !important;
+}
+.download-options img{
+
+    width: 142px !important;
+    height: 44px !important;
+}
+
+}
+
+@media (min-width:768px) and (max-width:1024px){
+
+.image-left{
+    width: 350px;
+    height:400px;
+}
+.right-section p{
+    font-size:16px !important;
+    text-align: center !important;
+    margin-left: 70px;
+}
+.logo-image{
+    width: 130px !important;
+    height: 110px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.scanner-image{
+    width: 220px;
+    height: 220px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.right-section  .download-text{
+    font-size: 16px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.right-section .download-options{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 30px !important;
+}
+.download-options img{
+
+    width: 142px !important;
+    height: 44px !important;
+}
+}
+
+
+@media (min-width:1024px) and (max-width:1299px){
+
+.image-left{
+    width: 600px !important;
+    height:400px !important;
+    margin-top: -150px !important;
+}
+
+.right-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .right-section p {
+    font-size:20px !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 60px !important;
+  }
+.logo-image{
+    width: 120px !important;
+    height: 110px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.scanner-image{
+    width: 300px;
+    height: 320px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: -70px !important;
+}
+.right-section  .download-text{
+    font-size: 18px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.right-section .download-options{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+}
+.download-options img{
+    width: 142px !important;
+    height: 44px !important;
+}
+}
