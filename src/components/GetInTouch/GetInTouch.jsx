@@ -1,45 +1,79 @@
-import React from "react";
-import { Box, Typography, Button, Avatar, Stack, TextField } from "@mui/material";
+import React, { useState } from "react";
+import {
+  Box,
+  Typography,
+  Button,
+  Avatar,
+  Stack,
+  TextField,
+  Snackbar,
+  Alert,
+} from "@mui/material";
 import Avatar1 from "../../assets/Avatar1.png";
 import Avatar2 from "../../assets/avatar2.png";
 import Avatar3 from "../../assets/Avatar3.png";
 
 const GetInTouch = () => {
+  const [email, setEmail] = useState("");
+  const [snackbar, setSnackbar] = useState({ open: false, message: "", severity: "success" });
+  const [loading, setLoading] = useState(false);
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = async () => {
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!isValidEmail) {
+      setSnackbar({ open: true, message: "Please enter a valid email address", severity: "error" });
+      return;
+    }
+
+    const payload = {
+      access_key: "05f47beb-d9e4-4c10-8916-67a61e02676a",
+      email,
+      message: "A user is trying to get in touch via email only.",
+      to: "0099vaish@gmail.com",
+      subject: "New Get In Touch Submission",
+    };
+
+    try {
+      setLoading(true);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setSnackbar({ open: true, message: "Thank you! We’ll get in touch soon.", severity: "success" });
+        setEmail("");
+      } else {
+        throw new Error(data.message || "Submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSnackbar({ open: true, message: "Something went wrong. Please try again.", severity: "error" });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <Box
       sx={{
-        width: {
-          xs: "70%",
-          sm: "70%",
-          md: "70%",
-          lg: "1160px",
-        },
+        width: { xs: "70%", sm: "70%", md: "70%", lg: "1160px" },
         bgcolor: "#eaf6f7",
-        borderTopRightRadius: {
-          xs: "40px",
-          sm: "80px",
-          lg: "120px",
-        },
-        borderBottomLeftRadius: {
-          xs: "40px",
-          sm: "80px",
-          lg: "120px",
-        },
-        padding: {
-          xs: "20px",
-          sm: "28px",
-          lg: "32px",
-        },
+        borderTopRightRadius: { xs: "40px", sm: "80px", lg: "120px" },
+        borderBottomLeftRadius: { xs: "40px", sm: "80px", lg: "120px" },
+        padding: { xs: "20px", sm: "28px", lg: "32px" },
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         gap: "10px",
         mx: "auto",
-        mt: {
-          xs: "40px",
-          sm: "80px",
-          lg: "120px",
-        },
+        mt: { xs: "40px", sm: "80px", lg: "120px" },
       }}
     >
       <Stack
@@ -93,6 +127,8 @@ const GetInTouch = () => {
 
       <TextField
         placeholder="Ex: abc@gmail.com"
+        value={email}
+        onChange={handleEmailChange}
         variant="outlined"
         InputProps={{
           sx: {
@@ -118,6 +154,8 @@ const GetInTouch = () => {
 
       <Button
         variant="contained"
+        onClick={handleSubmit}
+        disabled={loading}
         sx={{
           bgcolor: "#00917F",
           color: "#fff",
@@ -132,8 +170,19 @@ const GetInTouch = () => {
           },
         }}
       >
-        Get in touch
+        {loading ? "Sending..." : "Get in touch"}
       </Button>
+
+      <Snackbar
+        open={snackbar.open}
+        autoHideDuration={4000}
+        onClose={() => setSnackbar({ ...snackbar, open: false })}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      >
+        <Alert severity={snackbar.severity} onClose={() => setSnackbar({ ...snackbar, open: false })}>
+          {snackbar.message}
+        </Alert>
+      </Snackbar>
     </Box>
   );
 };
